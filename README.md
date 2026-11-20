@@ -68,10 +68,10 @@ This links the plugin at `~/.gemini/config/plugins/aws-calculator-mcp`.
 > agy mcp remove aws-calculator-mcp
 > ```
 
-**Or via `agy plugin install` (from a local path or Git URL):**
+**Or directly via `agy plugin install`:**
 
 ```bash
-agy plugin install /absolute/path/to/aws-calculator-mcp
+agy plugin install https://github.com/carlosrgomes/plugin-aws-calculator.git
 ```
 
 *(On the first tool call, `scripts/run-mcp.sh` automatically bootstraps the MCP server + Playwright + Chromium if not already present in `~/.cache/aws-calculator-mcp`.)*
@@ -242,10 +242,10 @@ O script cria o link do plugin em `~/.gemini/config/plugins/aws-calculator-mcp`.
 > agy mcp remove aws-calculator-mcp
 > ```
 
-**Ou via `agy plugin install` (a partir do diretório ou URL Git):**
+**Ou diretamente via `agy plugin install`:**
 
 ```bash
-agy plugin install /caminho/absoluto/para/aws-calculator-mcp
+agy plugin install https://github.com/carlosrgomes/plugin-aws-calculator.git
 ```
 
 *(Na primeira chamada de ferramenta, `scripts/run-mcp.sh` baixa automaticamente o MCP + Playwright + Chromium caso ainda não estejam em `~/.cache/aws-calculator-mcp`.)*
