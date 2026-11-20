@@ -49,7 +49,9 @@ cd aws-calculator-mcp
 ./scripts/install.sh
 ```
 
-> **No `sudo` and no `npx` cache isolation issues**: the MCP server and Playwright are co-located in `~/.cache/aws-calculator-mcp`, ensuring `get_estimate_cost` always resolves Playwright and Chromium cleanly.
+> **Why `scripts/run-mcp.sh` instead of `npx -y sample-aws-pricing-calculator-mcp@latest` directly?**
+> This plugin runs the **unmodified official** `sample-aws-pricing-calculator-mcp` package — there is no custom MCP server code. However, when launched via `npx`, npm runs the package inside an isolated `~/.npm/_npx/<hash>/node_modules` folder where `playwright` is missing, causing `get_estimate_cost` to fail with `playwright_not_available`. `scripts/run-mcp.sh` is a lightweight 20-line wrapper that co-locates `sample-aws-pricing-calculator-mcp` + `playwright` + Chromium in `~/.cache/aws-calculator-mcp` on first run (no `sudo` needed) and then `exec`s the official MCP server.
+> *(If you don't need `get_estimate_cost`, you can point any client directly to `npx -y sample-aws-pricing-calculator-mcp@latest`.)*
 
 ### Installation by Client
 
@@ -223,7 +225,9 @@ cd aws-calculator-mcp
 ./scripts/install.sh
 ```
 
-> **Sem `sudo` e sem conflito de cache `npx`**: o MCP e o Playwright ficam colocalizados em `~/.cache/aws-calculator-mcp`, garantindo que `get_estimate_cost` encontre o Playwright e o Chromium sempre.
+> **Por que usar `scripts/run-mcp.sh` em vez de `npx -y sample-aws-pricing-calculator-mcp@latest` direto?**
+> Este plugin executa o pacote oficial **`sample-aws-pricing-calculator-mcp` sem modificações** — não há nenhum código de servidor MCP próprio. Porém, ao rodar via `npx`, o npm executa o pacote em um cache isolado (`~/.npm/_npx/<hash>/node_modules`) onde o `playwright` não existe, fazendo o `get_estimate_cost` retornar `playwright_not_available`. O `scripts/run-mcp.sh` é um wrapper simples de ~20 linhas que instala `sample-aws-pricing-calculator-mcp` + `playwright` + Chromium **juntos** em `~/.cache/aws-calculator-mcp` na 1ª execução (sem `sudo`) e depois executa o servidor oficial.
+> *(Se você não precisar do `get_estimate_cost` para ler custos no chat, pode apontar qualquer cliente diretamente para `npx -y sample-aws-pricing-calculator-mcp@latest`.)*
 
 ### Instalação por Ferramenta
 
