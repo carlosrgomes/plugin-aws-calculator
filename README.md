@@ -184,7 +184,7 @@ Plugin completo para **Antigravity (`agy`)**, **Claude Code / Desktop** e **Devi
 
 1. **Servidor MCP oficial da Calculadora AWS** ([`sample-aws-pricing-calculator-mcp`](https://www.npmjs.com/package/sample-aws-pricing-calculator-mcp), 442 serviços, sem autenticação AWS).
 2. **Instalação automática de Playwright + Chromium** (em `~/.cache/aws-calculator-mcp`) para que `get_estimate_cost` calcule e valide custos reais em USD diretamente no chat.
-3. **Skill especialista `aws-pricing-calculator`** (`skills/aws-pricing-calculator/SKILL.md`) e **regras de roteamento** (`rules/AGENTS.md`) no padrão de qualidade do `gcp-calculator-mcp`, com sizing EC2/RDS/EKS/S3/Lambda, boas práticas FinOps (Graviton, Savings Plans, `gp3`) e validação obrigatória de custos.
+3. **Skill especialista `aws-pricing-calculator`** (`skills/aws-pricing-calculator/SKILL.md`) e **regras de roteamento** (`rules/AGENTS.md`) com sizing EC2/RDS/EKS/S3/Lambda, boas práticas FinOps (Graviton, Savings Plans, `gp3`) e validação obrigatória de custos.
 
 ### Estrutura do Plugin
 

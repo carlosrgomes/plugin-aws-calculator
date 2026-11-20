@@ -11,7 +11,7 @@ description: >-
 
 # AWS Pricing Calculator — Guia de Operação (`aws-calculator-mcp`)
 
-Esta skill padroniza o uso do servidor MCP **`aws-calculator-mcp`** no mesmo padrão de rigor, descoberta dinâmica de schema e verificação de custos do `gcp-calculator-mcp`, adaptado para as particularidades da **AWS Pricing Calculator** (`https://calculator.aws/#/`).
+Esta skill padroniza o uso do servidor MCP **`aws-calculator-mcp`** com descoberta dinâmica de schema, dimensionamento técnico e verificação obrigatória de custos na **AWS Pricing Calculator** (`https://calculator.aws/#/`).
 
 ---
 
@@ -65,7 +65,7 @@ Para editar, ajustar sizing ou migrar região de um link `https://calculator.aws
 
 ---
 
-## 4. Guia de Dimensionamento EC2 & FinOps AWS (Equivalente ao `recommend_machine_type`)
+## 4. Guia de Dimensionamento EC2 & FinOps AWS
 
 Quando o usuário pedir sizing por vCPU/RAM sem informar a família de instância, recomende famílias de geração atual:
 
