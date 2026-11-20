@@ -6,7 +6,7 @@
       "name": "aws-calculator-mcp",
       "displayName": "AWS Pricing Calculator MCP",
       "version": "1.0.0",
-      "description": "Cria, importa, edita e calcula custos oficiais na AWS Pricing Calculator (calculator.aws) com MCP + Playwright + Chromium + skill AWS.",
+      "description": "Create, import, edit, and calculate official estimates on AWS Pricing Calculator (calculator.aws) with MCP + Playwright + Chromium + AWS FinOps skill.",
       "author": {
         "name": "SantoDigital Cloud Engineering"
       },

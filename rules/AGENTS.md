@@ -1,7 +1,7 @@
 # AWS Pricing Calculator Plugin Rules
 
-Sempre que o usuário solicitar estimativas de custo na AWS, links oficiais da **AWS Pricing Calculator** (`https://calculator.aws/#/`), sizing de infraestrutura AWS ou importação/edição de links `calculator.aws/#/estimate?id=...`:
+Whenever the user asks for AWS cost estimates, official **AWS Pricing Calculator** links (`https://calculator.aws/#/`), AWS infrastructure sizing, or importing/editing `calculator.aws/#/estimate?id=...` links:
 
-1. Ative e siga a skill `aws-pricing-calculator`.
-2. Utilize exclusivamente o servidor MCP `aws-calculator-mcp` (`search_services`, `get_service_fields`, `build_estimate`, `import_estimate`, `get_estimate_cost`) — nunca invente preços de memória nem `serviceCode`/`fieldId` sem consultar o schema.
-3. Sempre valide os custos e as configurações efetivas usando `get_estimate_cost` antes de apresentar o valor final ao usuário, entregando o link oficial `https://calculator.aws/#/estimate?id=...` junto com a tabela de breakdown em USD.
+1. Activate and follow the `aws-pricing-calculator` skill.
+2. Exclusively use the `aws-calculator-mcp` server (`search_services`, `get_service_fields`, `build_estimate`, `import_estimate`, `get_estimate_cost`) — never guess prices from memory or invent `serviceCode`/`fieldId` values without inspecting the schema first.
+3. Always validate actual costs and effective configurations using `get_estimate_cost` before presenting the final totals to the user, delivering the official `https://calculator.aws/#/estimate?id=...` link together with a USD cost breakdown table.

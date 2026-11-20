@@ -2,7 +2,7 @@
   "name": "aws-calculator-mcp",
   "displayName": "AWS Pricing Calculator MCP",
   "version": "1.0.0",
-  "description": "Plugin completo para a Calculadora de Preços oficial da AWS (calculator.aws): instala automaticamente o servidor MCP + Playwright + Chromium e inclui skill especializada em arquitetura, sizing e otimização de custos AWS.",
+  "description": "Complete plugin for the official AWS Pricing Calculator (calculator.aws): auto-installs the MCP server + Playwright + Chromium and bundles an AWS sizing and FinOps specialist skill.",
   "author": {
     "name": "SantoDigital Cloud Engineering"
   },
