@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "santodigital-aws-calculator",
+  "description": "SantoDigital AWS Pricing Calculator MCP Plugin (MCP + Playwright + Chromium + AWS FinOps Skill)",
+  "owner": {
+    "name": "SantoDigital Cloud Engineering"
+  },
+  "plugins": [
+    {
+      "name": "aws-calculator-mcp",
+      "description": "Cria, importa, edita e calcula custos oficiais na AWS Pricing Calculator (calculator.aws) com MCP + Playwright + Chromium + skill AWS.",
+      "version": "1.0.0",
+      "source": ".",
+      "author": {
+        "name": "SantoDigital Cloud Engineering"
+      }
+    }
+  ]
+}

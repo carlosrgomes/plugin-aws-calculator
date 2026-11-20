@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "aws-calculator-mcp": {
+      "command": "bash",
+      "args": [
+        "scripts/run-mcp.sh"
+      ]
+    }
+  }
+}

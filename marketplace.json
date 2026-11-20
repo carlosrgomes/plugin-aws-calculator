@@ -1,0 +1,16 @@
+{
+  "name": "santodigital-aws-calculator",
+  "description": "SantoDigital AWS Pricing Calculator MCP Plugin (MCP + Playwright + Chromium + AWS FinOps Skill)",
+  "plugins": [
+    {
+      "name": "aws-calculator-mcp",
+      "displayName": "AWS Pricing Calculator MCP",
+      "version": "1.0.0",
+      "description": "Cria, importa, edita e calcula custos oficiais na AWS Pricing Calculator (calculator.aws) com MCP + Playwright + Chromium + skill AWS.",
+      "author": {
+        "name": "SantoDigital Cloud Engineering"
+      },
+      "source": "."
+    }
+  ]
+}
